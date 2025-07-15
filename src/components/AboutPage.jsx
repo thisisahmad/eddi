@@ -1,5 +1,7 @@
 import React from 'react';
 import './AboutPage.css';
+import VideoItem from './VideoItem';
+import BlogCard from './BlogCard';
 
 const AboutPage = () => {
   return (
@@ -29,75 +31,38 @@ const AboutPage = () => {
         <div className="card-content">
           <h2 className="section-title section-title-featured">Featured Videos</h2>
           <div className="videos-grid">
-            <div className="video-item">
-              <div className="video-embed-container">
-                <iframe
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                  title="CIS Center for Internet Security"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <p className="video-title">CIS Center for Internet Security</p>
-            </div>
-            <div className="video-item">
-              <div className="video-embed-container">
-                <iframe
-                  src="https://www.youtube.com/embed/y6120QO_o_o"
-                  title="Closed or Locked"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <p className="video-title">Closed or Locked</p>
-            </div>
-            <div className="video-item">
-              <div className="video-embed-container">
-                <iframe
-                  src="https://www.youtube.com/embed/M7lc1UVf-VE"
-                  title="Introducing EDDI-L"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <p className="video-title">Introducing EDDI-L</p>
-            </div>
+            <VideoItem
+              src="https://www.youtube.com/embed/XShcPAehe_4"
+              title="CIS Center for Internet Security"
+              label="CIS Center for Internet Security"
+            />
+            <VideoItem
+              src="https://www.youtube.com/embed/tQWtmdjzUKk"
+              title="Closed or Locked"
+              label="Closed or Locked"
+            />
+            <VideoItem
+              src="https://www.youtube.com/embed/Dlwd4gUrhec"
+              title="Introducing EDDI-L"
+              label="Introducing EDDI-L"
+            />
           </div>
           <h2 className="section-title section-title-featured" style={{ marginTop: '2rem' }}>Latest Blogs</h2>
           <div className="blogs-grid">
-            <div className="blog-card">
-              <div className="blog-card-content">
-                <h3 className="blog-title">You Can't Protect What You Can't See — Why CEOs Are Now the First to Fall After a Cyberattack</h3>
-                <p className="blog-meta">Elizabeth Hsu | April 19, 2023</p>
-                <p className="blog-excerpt">
-                  If you're a CEO or executive leader, here's the uncomfortable truth: Cybercriminals
-                  are already in someone's network — and it might be yours next.
-                </p>
-                <ul className="blog-list">
-                  <li>32% of Executives Were Fired After a Breach</li>
-                  <li>87% of breaches now find after a breach</li>
-                </ul>
-                <a href="#" className="blog-read-more">Read More</a>
-              </div>
-            </div>
-            <div className="blog-card">
-              <div className="blog-card-content">
-                <h3 className="blog-title">CAT Is Building That Bridge</h3>
-                <p className="blog-meta">Elizabeth Hsu | April 19, 2023</p>
-                <p className="blog-excerpt">
-                  At CAT, we've asked a bold question: What if executives could see IT risk and performance
-                  as clearly as they see revenue, operations, or customer churn?
-                </p>
-                <p className="blog-excerpt">
-                  Our answer is a new kind of solution — one that doesn't just report on security but
-                  redefines how executives lead through IT.
-                </p>
-                <a href="#" className="blog-read-more">Read More</a>
-              </div>
-            </div>
+            <BlogCard
+              title="You Can't Protect What You Can't See — Why CEOs Are Now the First to Fall After a Cyberattack"
+              meta="Elizabeth Hsu | April 19, 2023"
+              excerpt={"If you're a CEO or executive leader, here's the uncomfortable truth: Cybercriminals are already in someone's network — and it might be yours next."}
+              list={["32% of Executives Were Fired After a Breach", "87% of breaches now find after a breach"]}
+              href="#"
+            />
+            <BlogCard
+              title="CAT Is Building That Bridge"
+              meta="Elizabeth Hsu | April 19, 2023"
+              excerpt={"At CAT, we've asked a bold question: What if executives could see IT risk and performance as clearly as they see revenue, operations, or customer churn?"}
+              excerpt2={"Our answer is a new kind of solution — one that doesn't just report on security but redefines how executives lead through IT."}
+              href="#"
+            />
           </div>
         </div>
       </div>
