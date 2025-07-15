@@ -33,18 +33,18 @@ const AboutPage = () => {
           <div className="videos-grid">
             <VideoItem
               src="https://www.youtube.com/embed/f-Z7h5dI6uQ"
-              title="CIS Center for Internet Security"
-              label="CIS Center for Internet Security"
+              title="CIS Overview"
+              label="CIS Overview"
             />
             <VideoItem
               src="https://www.youtube.com/embed/q4y4xzhQR7g"
-              title="Closed or Locked"
-              label="Closed or Locked"
+              title="Cybersecurity Auditors Investigative IT Auditing"
+              label="Cybersecurity Auditors Investigative IT Auditing"
             />
             <VideoItem
               src="https://www.youtube.com/embed/Mep0QGxeQDY"
-              title="Introducing EDDI-L"
-              label="Introducing EDDI-L"
+              title="CAT Inc. Intro"
+              label="CAT Inc. Intro"
             />
           </div>
           <h2 className="section-title section-title-featured" style={{ marginTop: '2rem' }}>Latest Blogs</h2>
