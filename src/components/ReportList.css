@@ -1,0 +1,21 @@
+/* ReportList styles */
+.reports-list-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.reports-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+  padding: 20px 20px 15px;
+  margin: 0;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.reports-list {
+  padding: 0;
+} 

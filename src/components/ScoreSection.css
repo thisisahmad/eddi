@@ -1,0 +1,46 @@
+/* ScoreSection styles */
+.reports-score-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  padding: 20px;
+}
+
+.score-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.compliance-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.score-meter-container {
+  display: flex;
+  align-items: center;
+}
+
+.score-meter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meter-svg {
+  width: 120px;
+  height: 70px;
+}
+
+.meter-text {
+  position: absolute;
+  bottom: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e293b;
+} 

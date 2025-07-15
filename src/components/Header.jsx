@@ -47,8 +47,8 @@ const Header = ({ onPageChange, activePage }) => (
         </ul>
       </div>
       <div className="nav-item">
-        <a href="#" className="nav-link">
-          Audit Reports <span style={{ marginLeft: '8px' }}>&#9662;</span> 
+        <a href="#" className={`nav-link${activePage === 'report' ? ' active' : ''}`} onClick={() => onPageChange('report')}>
+          Reports <span style={{ marginLeft: '8px' }}>&#9662;</span> 
         </a>
         <ul className="dropdown-content">
           <li><a href="#">Sample Reports</a></li>
