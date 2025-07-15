@@ -46,7 +46,7 @@ const Login = () => {
           <a href="#">Forgot Password?</a>
         </div>
         <button type="submit" className="login-btn">
-          🚀 Login
+          Login
         </button>
         <div className="otp-info">
           <i className="fas fa-mobile-alt"></i>
