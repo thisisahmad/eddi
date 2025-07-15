@@ -12,7 +12,15 @@ const BlogCard = ({ title, meta, excerpt, list, excerpt2, href }) => (
         </ul>
       )}
       {excerpt2 && <p className="blog-excerpt">{excerpt2}</p>}
-      <a href={href || "#"} className="blog-read-more">Read More</a>
+      <a
+  href={href || "#"}
+  className="blog-read-more"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Read More
+</a>
+
     </div>
   </div>
 );

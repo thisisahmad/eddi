@@ -32,17 +32,17 @@ const AboutPage = () => {
           <h2 className="section-title section-title-featured">Featured Videos</h2>
           <div className="videos-grid">
             <VideoItem
-              src="https://www.youtube.com/embed/XShcPAehe_4"
+              src="https://www.youtube.com/embed/f-Z7h5dI6uQ"
               title="CIS Center for Internet Security"
               label="CIS Center for Internet Security"
             />
             <VideoItem
-              src="https://www.youtube.com/embed/tQWtmdjzUKk"
+              src="https://www.youtube.com/embed/q4y4xzhQR7g"
               title="Closed or Locked"
               label="Closed or Locked"
             />
             <VideoItem
-              src="https://www.youtube.com/embed/Dlwd4gUrhec"
+              src="https://www.youtube.com/embed/Mep0QGxeQDY"
               title="Introducing EDDI-L"
               label="Introducing EDDI-L"
             />
@@ -54,14 +54,14 @@ const AboutPage = () => {
               meta="Elizabeth Hsu | April 19, 2023"
               excerpt={"If you're a CEO or executive leader, here's the uncomfortable truth: Cybercriminals are already in someone's network — and it might be yours next."}
               list={["32% of Executives Were Fired After a Breach", "87% of breaches now find after a breach"]}
-              href="#"
+              href="https://www.linkedin.com/pulse/you-cant-protect-what-see-why-ceos-now-first-fall-after-elizabeth-wu-3yvae/?trackingId=JduJZn65STa7J0T7Fxdbng%3D%3D"
             />
             <BlogCard
               title="CAT Is Building That Bridge"
               meta="Elizabeth Hsu | April 19, 2023"
               excerpt={"At CAT, we've asked a bold question: What if executives could see IT risk and performance as clearly as they see revenue, operations, or customer churn?"}
               excerpt2={"Our answer is a new kind of solution — one that doesn't just report on security but redefines how executives lead through IT."}
-              href="#"
+              href="https://www.linkedin.com/pulse/cat-building-bridge-elizabeth-wu-ou5xe/?trackingId=JduJZn65STa7J0T7Fxdbng%3D%3D"
             />
           </div>
         </div>
