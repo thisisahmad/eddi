@@ -6,7 +6,7 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/eddi">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/main" element={<MainPage />} />
