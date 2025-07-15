@@ -16,7 +16,6 @@ export default function ScoreSection({ currentScore }) {
                 stroke="url(#meterGradient)"
                 strokeWidth="8"
                 strokeLinecap="round"
-                style={{ transition: "all 1.5s ease-out" }}
               />
               <defs>
                 <linearGradient id="meterGradient" x1="0%" y1="0%" x2="100%" y2="0%">
