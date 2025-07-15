@@ -1,0 +1,98 @@
+/* Chat Card Container */
+.chat-card {
+  width: 100%;
+  max-width: 440px;
+  height: 800px;
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 24px;
+  margin: 0 auto;
+  position: sticky;
+  top: 20px;
+}
+
+/* Inner Content */
+.chat-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Avatar */
+.chat-advisor-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.chat-advisor-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1d4ed8;
+  margin-bottom: 18px;
+}
+
+/* Chat History */
+.chat-history {
+  flex-grow: 1;
+  width: 100%;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Shared Message Style */
+.chat-message {
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  max-width: 80%;
+  word-wrap: break-word;
+  display: inline-block;
+}
+
+/* Bot message on left */
+.chat-message.bot {
+  align-self: flex-start;
+  background-color: #f3f4f6;
+  color: #374151;
+  border-top-right-radius: 0;
+}
+
+/* User message on right */
+.chat-message.user {
+  align-self: flex-end;
+  background-color: #e0f2fe;
+  color: #0369a1;
+  border-top-left-radius: 0;
+}
+
+/* Input Box */
+.chat-input {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  color: #111827;
+  background: #f9fafb;
+  transition: border 0.2s;
+}
+
+.chat-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}

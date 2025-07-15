@@ -1,0 +1,323 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  
+  /* Header Styling - More compact */
+  .compliance-header {
+    background: white;
+    border-radius: 12px;
+    padding: 12px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e2e8f0;
+  }
+  
+  .header-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .brand-logo {
+    width: 35px;
+    height: 35px;
+    border-radius: 6px;
+  }
+  
+  .brand-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .brand-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1e293b;
+    letter-spacing: -0.025em;
+  }
+  
+  .brand-subtitle {
+    font-size: 12px;
+    color: #64748b;
+    font-weight: 500;
+  }
+  
+  .main-nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    color: #64748b;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+  }
+  
+  .nav-item:hover {
+    color: #1e293b;
+    background-color: #f1f5f9;
+  }
+  
+  .nav-item.active {
+    color: #2563eb;
+    background-color: #dbeafe;
+    font-weight: 600;
+  }
+  
+  /* Main Content Card - More compact */
+  .main-content-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+  }
+  
+  /* Content Header with Meter - Side by side layout */
+  .content-header-with-meter {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 15px;
+  }
+  
+  .page-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+  }
+  
+  /* Interactive Score Meter - Left positioned */
+  .score-meter-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .score-meter {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .meter-svg {
+    width: 120px;
+    height: 70px;
+  }
+  
+  .meter-text {
+    position: absolute;
+    bottom: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e293b;
+  }
+  
+  /* Compact Table Header */
+  .table-header-compact {
+    display: grid;
+    grid-template-columns: 1fr 100px 100px;
+    gap: 15px;
+    padding: 10px 0;
+    background-color: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    align-items: center;
+  }
+  
+  .header-cell-compact {
+    font-weight: 600;
+    font-size: 12px;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .control-name-header {
+    text-align: left;
+  }
+  
+  .status-header,
+  .legal-risk-header {
+    text-align: center;
+  }
+  
+  /* Compact Controls Section */
+  .controls-section-compact {
+    padding: 0;
+  }
+  
+  .control-group-compact {
+    border-bottom: 1px solid #f1f5f9;
+  }
+  
+  .control-main-row-compact,
+  .sub-item-row-compact,
+  .additional-control-row-compact {
+    display: grid;
+    grid-template-columns: 1fr 100px 100px;
+    gap: 15px;
+    padding: 8px 20px;
+    align-items: center;
+    transition: background-color 0.2s ease;
+  }
+  
+  .control-main-row-compact:hover,
+  .additional-control-row-compact:hover {
+    background-color: #f8fafc;
+  }
+  
+  .sub-item-row-compact {
+    background-color: #fafbfc;
+    border-top: 1px solid #f1f5f9;
+    padding: 6px 20px;
+  }
+  
+  .sub-item-row-compact:hover {
+    background-color: #f1f5f9;
+  }
+  
+  .control-name-cell-compact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .sub-item-name-compact {
+    padding-left: 30px;
+    font-size: 13px;
+    color: #64748b;
+  }
+  
+  .expand-button-compact {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 50%;
+    background: white;
+    color: #64748b;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+  }
+  
+  .expand-button-compact:hover {
+    border-color: #2563eb;
+    color: #2563eb;
+    background-color: #f0f9ff;
+  }
+  
+  .control-title-compact {
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 14px;
+  }
+  
+  .status-cell-compact,
+  .legal-risk-cell-compact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .status-badge-compact {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  
+  .risk-badge-compact {
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .risk-badge-compact.yes {
+    background-color: #fee2e2;
+    color: #dc2626;
+  }
+  
+  .risk-badge-compact.no {
+    background-color: #dcfce7;
+    color: #16a34a;
+  }
+  
+  .sub-items-compact {
+    display: block;
+  }
+  
+  .additional-controls-compact {
+    background-color: #fafbfc;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .compliance-header {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+      padding: 10px 15px;
+    }
+  
+    .main-nav {
+      gap: 10px;
+    }
+  
+    .header-left {
+      flex-direction: column;
+      gap: 15px;
+      align-items: flex-start;
+    }
+  
+    .table-header-compact,
+    .control-main-row-compact,
+    .sub-item-row-compact,
+    .additional-control-row-compact {
+      grid-template-columns: 1fr 70px 70px;
+      gap: 8px;
+      padding: 6px 15px;
+    }
+  
+    .content-header-with-meter {
+      padding: 12px 15px;
+    }
+  
+    .page-title {
+      font-size: 18px;
+    }
+  
+    .meter-svg {
+      width: 100px;
+      height: 60px;
+    }
+  
+    .meter-text {
+      font-size: 20px;
+    }
+  }

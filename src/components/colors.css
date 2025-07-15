@@ -1,0 +1,23 @@
+:root {
+  --color-primary: #667eea;
+  --color-secondary: #764ba2;
+  --color-bg: #f8fafc;
+  --color-accent: #2d3748;
+  --color-accent-light: #718096;
+  --color-error: #e53e3e;
+  --color-error-bg: #fed7d7;
+  --color-error-border: #feb2b2;
+  --color-white: #fff;
+  --color-input-border: #e2e8f0;
+  --color-label: #4a5568;
+  --color-shadow: rgba(0, 0, 0, 0.15);
+  --color-shadow-hover: rgba(102, 126, 234, 0.4);
+  --color-btn-shadow: rgba(102, 126, 234, 0.4);
+  --color-btn-shadow-default: rgba(0, 0, 0, 0.15);
+  --color-black: #000;
+  --color-menu-bg: #fff;
+  --color-menu-hover: #f0f4ff;
+  --color-chat-bg: #f8fafc;
+  --color-chat-header: #667eea;
+  --color-chat-header-text: #fff;
+} 
