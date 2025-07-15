@@ -163,10 +163,11 @@ This report was generated automatically by the EDDI Governance System.
       <div className="reports-grid">
         {/* Left Column - Reports Content */}
         <div className="reports-left-column">
-          {/* Score Section */}
-          <ScoreSection currentScore={currentScore} />
-
-          {/* Reports List */}
+        <div className="score-financial-card">
+            <div className="score-section">
+              <ScoreSection currentScore={currentScore} />
+            </div>
+          </div>
           <div className="reports-list-card">
             <h3 className="reports-title">Available Reports</h3>
             <div className="reports-list">
