@@ -5,7 +5,7 @@ import BlogCard from './BlogCard';
 
 const AboutPage = () => {
   return (
-    <div className="left-column">
+    <div className="left-column-about">
       <div className="content-card">
         <div className="card-content">
           <h2 className="section-title">What is Nevada's Safe Harbor Law?</h2>
