@@ -42,23 +42,23 @@ const AboutPage = () => {
               label="Cybersecurity Auditors Investigative IT Auditing"
             />
             <VideoItem
-              src="https://www.youtube.com/embed/Mep0QGxeQDY"
-              title="CAT Inc. Intro"
-              label="CAT Inc. Intro"
+              src="https://www.youtube.com/embed/SXbT8JNB8jg"
+              title="EDDi lets you rest Easy"
+              label="EDDi lets you rest Easy"
             />
           </div>
           <h2 className="section-title section-title-featured" style={{ marginTop: '2rem' }}>Latest Blogs</h2>
           <div className="blogs-grid">
             <BlogCard
               title="You Can't Protect What You Can't See — Why CEOs Are Now the First to Fall After a Cyberattack"
-              meta="Elizabeth Hsu | April 19, 2023"
+              meta="Elizabeth Wu | April 19, 2023"
               excerpt={"If you're a CEO or executive leader, here's the uncomfortable truth: Cybercriminals are already in someone's network — and it might be yours next."}
               list={["32% of Executives Were Fired After a Breach", "87% of breaches now find after a breach"]}
               href="https://www.linkedin.com/pulse/you-cant-protect-what-see-why-ceos-now-first-fall-after-elizabeth-wu-3yvae/?trackingId=JduJZn65STa7J0T7Fxdbng%3D%3D"
             />
             <BlogCard
               title="CAT Is Building That Bridge"
-              meta="Elizabeth Hsu | April 19, 2023"
+              meta="Elizabeth Wu | April 19, 2023"
               excerpt={"At CAT, we've asked a bold question: What if executives could see IT risk and performance as clearly as they see revenue, operations, or customer churn?"}
               excerpt2={"Our answer is a new kind of solution — one that doesn't just report on security but redefines how executives lead through IT."}
               href="https://www.linkedin.com/pulse/cat-building-bridge-elizabeth-wu-ou5xe/?trackingId=JduJZn65STa7J0T7Fxdbng%3D%3D"
