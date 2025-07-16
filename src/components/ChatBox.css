@@ -231,7 +231,9 @@
   0%, 60%, 100% { transform: translateY(0); }
   30% { transform: translateY(-10px); }
 }
-
+.response-ul{
+  list-style: none;
+}
 /* Input area */
 .chat-input {
   padding: 20px;
