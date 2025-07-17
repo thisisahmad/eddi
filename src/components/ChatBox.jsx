@@ -76,8 +76,30 @@ const ChatBox = () => {
   };
 
   const sendQuickMessage = (text) => {
-    setInputValue(text);
-    setTimeout(() => sendMessage(), 100);
+    // Directly send the message without setting inputValue
+    if (!isTyping) {
+      const userMessage = {
+        id: nextId,
+        type: 'user',
+        content: text,
+        timestamp: new Date()
+      };
+      setMessages(prev => [...prev, userMessage]);
+      setNextId(prev => prev + 1);
+      setTimeout(() => setIsTyping(true), 300);
+
+      setTimeout(() => {
+        setIsTyping(false);
+        const botMessage = {
+          id: nextId + 1,
+          type: 'bot',
+          content: getBotResponse(text),
+          timestamp: new Date()
+        };
+        setMessages(prev => [...prev, botMessage]);
+        setNextId(prev => prev + 2);
+      }, 1000 + Math.random() * 1000);
+    }
   };
 
   const formatTime = (date) => {
@@ -100,7 +122,7 @@ const ChatBox = () => {
   const getBotResponse = (input) => {
     const msg = input.toLowerCase();
 
-    if (msg.includes("$1.2m") || msg.includes("insurance should cover that") || msg.includes("where did you come up")) {
+    if (msg.includes("show my financial exposure")) {
       return (
         <>
           <p><strong>Here’s how I calculated the $1.2M exposure — and why it’s not fully covered by your insurance:</strong></p>
@@ -125,7 +147,7 @@ const ChatBox = () => {
           </ul>
         </>
       );
-    } else if (msg.includes("show me the gaps")) {
+    } else if (msg.includes("reveal security gaps")) {
       return (
         <>
           <p><strong>Absolutely. Here’s your current risk breakdown by control gap:</strong></p>
@@ -142,7 +164,7 @@ const ChatBox = () => {
           </ul>
         </>
       );
-    } else if (msg.includes("remediation")) {
+    } else if (msg.includes("build my remediation plan")) {
       return (
         <>
           <p><strong>📅 Remediation Timeline: 90-Day Plan</strong></p>
@@ -156,7 +178,7 @@ const ChatBox = () => {
           </ul>
         </>
       );
-    } else if (msg.includes("verify")) {
+    } else if (msg.includes("generate verification evidence")) {
       return (
         <>
           <p><strong>✅ How Can You Verify This is True?</strong></p>
@@ -226,10 +248,10 @@ const ChatBox = () => {
 
       <div className="chat-input">
         <div className="quick-actions">
-          <button onClick={() => sendQuickMessage('Where did $1.2M come from?')} className="quick-action">💸 $1.2M Exposure</button>
-          <button onClick={() => sendQuickMessage('Show me the gaps')} className="quick-action">🛠️ Gaps</button>
-          <button onClick={() => sendQuickMessage('Remediation timeline')} className="quick-action">📆 Timeline</button>
-          <button onClick={() => sendQuickMessage('How do I verify this?')} className="quick-action">📋 Verify</button>
+          <button onClick={() => sendQuickMessage('Show My Financial Exposure')} className="quick-action">💰 Show My Financial Exposure</button>
+          <button onClick={() => sendQuickMessage('Reveal Security Gaps')} className="quick-action">🛠️ Reveal Security Gaps</button>
+          <button onClick={() => sendQuickMessage('Build My Remediation Plan')} className="quick-action">📆 Build My Remediation Plan</button>
+          <button onClick={() => sendQuickMessage('Generate Verification Evidence')} className="quick-action">📋 Generate Verification Evidence</button>
         </div>
         <div className="input-container">
           <div className="input-wrapper">
