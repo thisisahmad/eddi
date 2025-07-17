@@ -6,7 +6,7 @@ import ScoreSection from './ScoreSection';
 
 export default function CompliancePage() {
   const [currentScore, setCurrentScore] = useState(0)
-  const [targetScore] = useState(92)
+  const [targetScore] = useState(62)
   const [expandedSections, setExpandedSections] = useState({
     "hardware-inventory": true,
     "software-inventory": true,
