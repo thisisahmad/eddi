@@ -16,22 +16,22 @@ const Header = ({ onPageChange, activePage }) => (
       </h1>
     </div>
     <nav className="header-nav">
-      <div className="nav-item">
+      <div className={`nav-item${activePage === 'about' ? ' active' : ''}`}>
         <a href="#" className={`nav-link${activePage === 'about' ? ' active' : ''}`} onClick={() => onPageChange('about')}>
           About
         </a>
       </div>
-      <div className="nav-item">
+      <div className={`nav-item${activePage === 'compliance' ? ' active' : ''}`}>
         <a href="#" className={`nav-link${activePage === 'compliance' ? ' active' : ''}`} onClick={() => onPageChange('compliance')}>
           Compliance
         </a>
       </div>
-      <div className="nav-item">
+      <div className={`nav-item${activePage === 'nextsteps' ? ' active' : ''}`}>
         <a href="#" className={`nav-link${activePage === 'nextsteps' ? ' active' : ''}`} onClick={() => onPageChange('nextsteps')}>
           Next Steps
         </a>
       </div>
-      <div className="nav-item">
+      <div className={`nav-item${activePage === 'report' ? ' active' : ''}`}>
         <a href="#" className={`nav-link${activePage === 'report' ? ' active' : ''}`} onClick={() => onPageChange('report')}>
           Reports
         </a>

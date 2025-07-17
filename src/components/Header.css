@@ -62,7 +62,17 @@
 }
 
 .nav-link.active {
-  font-weight: 800;
+  font-weight: 700;
+  color: var(--color-primary) !important;
+  background: none;
+  border-bottom: none;
+  box-shadow: none;
+}
+
+.nav-item.active {
+  background: var(--color-menu-hover);
+  border-radius: 10px;
+  transition: background 0.2s, border 0.2s;
 }
 
 .arrow-down {

@@ -14,8 +14,8 @@ body {
 }
 
 .left-column{
-
   padding-top: 10px;
+  width: 100%;
 }
 
 /* === LAYOUT === */
@@ -25,28 +25,10 @@ body {
   padding: 0;
 }
 
-@media (min-width: 768px) {
-  .main-page-container {
-    padding: 1rem;
-  }
-}
-
-@media (min-width: 1024px) {
-  .main-page-container {
-    padding: 1.5rem;
-  }
-}
-
 .main-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
-}
-
-@media (min-width: 1024px) {
-  .main-grid {
-    grid-template-columns: 2fr 1fr;
-  }
 }
 
 /* === NAVIGATION === */
@@ -106,4 +88,20 @@ body {
 .right-column {
   position: sticky;
   top: 1rem;
+}
+
+/* === RESPONSIVE BREAKPOINTS === */
+@media (min-width: 768px) {
+  .main-page-container {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-page-container {
+    padding: 1.5rem;
+  }
+  .main-grid {
+    grid-template-columns: 2fr 1fr;
+  }
 }
